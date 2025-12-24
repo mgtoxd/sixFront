@@ -1,54 +1,54 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+本文件为 Claude Code (claude.ai/code) 在此代码库中工作时提供指导。
 
-# answer
+# 回答规范
 
 一定要使用中文回答。请始终使用简体中文与我对话，并在回答时保持专业、简洁，生成代码的注释，文档等一切非代码也一定要用简体中文，总之，能用中文的地方都用中文
 
-## Project Overview
+## 项目概述
 
-This is a Vue 3 application built with Vite and PrimeVue component library.
+这是一个使用 Vite 和 PrimeVue 组件库构建的 Vue 3 应用程序。
 
-## Development Commands
+## 开发命令
 
-- **Install dependencies**: `npm install`
-- **Dev server**: `npm run dev` - Starts Vite dev server with hot reload
-- **Build**: `npm run build` - Builds for production to `dist/` directory
-- **Preview**: `npm run preview` - Preview production build locally
+- **安装依赖**: `npm install`
+- **开发服务器**: `npm run dev` - 启动 Vite 开发服务器并支持热重载
+- **构建**: `npm run build` - 构建生产版本到 `dist/` 目录
+- **预览**: `npm run preview` - 本地预览生产构建
 
-## Architecture
+## 架构
 
-- **Source location**: `src/` directory
-- **Entry point**: `src/main.js` - App initialization with PrimeVue
-- **Root component**: `src/App.vue`
-- **Build output**: `dist/` directory
-- **Module system**: ES modules (type: "module" in package.json)
+- **源码位置**: `src/` 目录
+- **入口文件**: `src/main.js` - 应用初始化与 PrimeVue 配置
+- **根组件**: `src/App.vue`
+- **构建输出**: `dist/` 目录
+- **模块系统**: ES 模块（package.json 中 type: "module"）
 
-## Tech Stack
+## 技术栈
 
-- **Vue 3**: Progressive JavaScript framework
-- **Vite**: Build tool and dev server
-- **PrimeVue**: Vue 3 UI component library with Aura theme
+- **Vue 3**: 渐进式 JavaScript 框架
+- **Vite**: 构建工具和开发服务器
+- **PrimeVue**: Vue 3 UI 组件库，使用 Aura 主题
 
-## PrimeVue Configuration
+## PrimeVue 配置
 
-PrimeVue is configured in `src/main.js` with the Aura theme preset. Components can be imported from `primevue/` package.
+PrimeVue 在 `src/main.js` 中配置了 Aura 主题预设。组件可从 `primevue/` 包中导入。
 
-## Styling Guidelines
+## 样式指南
 
-**IMPORTANT**: When generating web pages or HTML components, you MUST strictly follow the design system defined in `STYLE-GUIDE.md`.
+**重要**: 生成网页或 HTML 组件时，必须严格遵循 `STYLE-GUIDE.md` 中定义的设计系统。
 
-The style guide defines:
-- **Colors**: Primary `#646cff`, Text `#213547`, Secondary `#6b7280`, Background `#ffffff`/`#f9f9f9`
-- **Typography**: Inter font, weights 400/500/700, specific font sizes and line heights
-- **Spacing**: 8-level scale from 0.5rem to 4rem
-- **Border Radius**: 6px (small), 8px (medium), 12px (large)
-- **Shadows**: 2-level elevation system
-- **Transitions**: Uniform 0.25s duration
-- **Components**: Standardized Post Card, Widget, Tag, Button, Input, Footer styles
+样式指南定义了：
+- **颜色**: 主色 `#646cff`，文本色 `#213547`，次要色 `#6b7280`，背景色 `#ffffff`/`#f9f9f9`
+- **字体**: Inter 字体，字重 400/500/700，特定字体大小和行高
+- **间距**: 8 级比例，从 0.5rem 到 4rem
+- **圆角**: 6px（小），8px（中），12px（大）
+- **阴影**: 2 级高度系统
+- **过渡**: 统一 0.25s 时长
+- **组件**: 标准化的文章卡片、小部件、标签、按钮、输入框、页脚样式
 
-Reference `STYLE-GUIDE.md` for complete specifications, component examples, and Tailwind CSS mappings.
+参考 `STYLE-GUIDE.md` 获取完整规范、组件示例和 Tailwind CSS 映射。
 
 ## 胶水开发要求（强依赖复用 / 生产级库直连模式）
 ### 角色设定你是一名**资深软件架构师与高级工程开发者**，擅长在复杂系统中通过强依赖复用成熟代码来构建稳定、可维护的工程。
